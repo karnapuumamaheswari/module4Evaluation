@@ -1,0 +1,7 @@
+import express from "express";
+
+import { getAnalytics } from "../controllers/analytics.controller";
+
+const router = express.Router();
+router.get("/all",getAnalytics);
+export default router;
