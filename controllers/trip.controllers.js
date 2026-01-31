@@ -1,4 +1,4 @@
-import supabase from "../config/supabse";
+import supabase from "../config/supabse.js";
 
 export const createTrip = async (req,res)=>{
     const{

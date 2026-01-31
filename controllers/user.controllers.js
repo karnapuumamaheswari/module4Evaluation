@@ -1,4 +1,4 @@
-import supabase from "../config/supabse";
+import supabase from "../config/supabse.js";
 
 export const createUser = async (req,res)=>{
     const {name,email,password,role} = req.body;

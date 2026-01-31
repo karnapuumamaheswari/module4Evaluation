@@ -1,7 +1,6 @@
 import express from "express";
-import { createVehicle,getVehicles } from "../controllers/vehicle.controllers";
+import { createVehicle,getVehicles } from "../controllers/vehicle.controllers.js";
 import rateLimiter from "../middlewares/ratelimiter.middleware.js";
-import { get } from "node:http";
 
 const router = express.Router();
 router.post("/create",rateLimiter,createVehicle);
